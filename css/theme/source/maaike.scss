@@ -1,0 +1,46 @@
+/**
+ * Maaike's theme for reveal.js.
+ *
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+//@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+//@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #0C3D4C;
+
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainColor: #EFEFEF;
+$linkColor: #5cb9d5;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: 'Source Sans Pro', sans-serif;
+$headingTextShadow: none;
+$headingLineHeight: 1.0em;
+//$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #5cb9d5;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: 600;
+}

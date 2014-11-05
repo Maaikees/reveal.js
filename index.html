@@ -420,7 +420,8 @@ function linkify( selector ) {
                 previewLinks: false,
 
                 // Transition style
-                transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
+                transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+				// transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
                 // Transition speed
                 transitionSpeed: 'fast', // default/fast/slow
@@ -431,14 +432,14 @@ function linkify( selector ) {
                 // Number of slides away from the current that are visible
                 viewDistance: 3,
 
-                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-//				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                theme: 'maaike', // available themes are in /css/theme
+                // theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 
                 // Parallax background image
-                parallaxBackgroundImage: 'img/cuillins.jpg',
+                // parallaxBackgroundImage: 'img/cuillins.jpg',
 
                 // Parallax background size
-                parallaxBackgroundSize: '2048px 932px',
+                // parallaxBackgroundSize: '2048px 932px',
 
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
