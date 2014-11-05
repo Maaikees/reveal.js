@@ -2,7 +2,16 @@
  * Maaike's theme for reveal.js.
  *
  */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("../../lib/font/SourceSansPro-Regular.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url("../../lib/font/SourceSansPro-Regular.woff2") format("woff2"); }
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -33,7 +42,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eee;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro Semibold", sans-serif;
   line-height: 1em;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -132,13 +141,5 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #5cb9d5; }
-
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-  font-weight: 600; }
 
 /*# sourceMappingURL=maaike.css.map */
