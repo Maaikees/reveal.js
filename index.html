@@ -59,13 +59,12 @@
                 </section>
 
  				<section>
-                	<h1>Scope of this talk</h1>
-                	<h2>An organisation may be agile, but what if your team isn't?</h2>
+                   	<h2>An organisation may be agile, but what if your team isn't?</h2>
                 	<p>What would be a succesful test strategy in that case</p>
                </section>
 
 				<section>
-                	<h1>Context: where did I come from?</h1>
+                	<h2>Context: where did I come from?</h2>
                 	<ul>
 						<li>Big bank</li>
 						<li>Process == sacred</li>
@@ -76,7 +75,7 @@
                </section>
 
 				<section>
-                	<h1>Context: about the project</h1>
+                	<h2>Context: about the project</h2>
                 	<ul>
 						<li>Frontend + services layer</li>
 						<li>Build from scratch</li>
@@ -88,10 +87,22 @@
                </section>
 
                <section>
-               		<h1>The Problem</h1>
-                	<h2>Given that I am a lonely tester in my team and I have to keep up with 5 developers
+                	<h2>More context about the organisation:
+                	<ul>
+						<li>Freedom for the individual</li>
+						<li>No testmanager(s)</li>
+						<li>Not many formal processes</li>
+						<li>Not a lot of senior colleagues</li>
+					</ul>
+                	</h2>
+
+
+               </section>
+
+               <section>
+               	   	<h2>Given that I am a lonely tester in my team and I have to keep up with 5 developers
                 	<p> When I don't do something smart</p>
-                	<p> I can guarantee we will not build high quality software</p>
+                	<p> Then I can guarantee we will not build high quality software</p>
                 	</h2>
 
                </section>
@@ -105,49 +116,74 @@
                 	<h2 style="text-shadow: -3px 0 black, 0 3px black;">Sounds easy right...DUH, of course you need your team</h2>
                 	<p> But the oldskool views on testing were pretty persistent...</p>
                 	<p></p>
-                	
+                </section>
 
-
-               </section>
-
-               <section>
-                	<h2>More context about the organisation:
-                		<ul>
-						<li>Freedom for the individual</li>
-						<li>No testmanager(s)</li>
-						<li>Not many formal processes</li>
-						<li>Not a lot of senior colleagues</li>
-					</ul>
-                	</h2>
-
-
-               </section>
-
-               <section>
-               		<h1> Make the best of it: </h1>
-               		<h2> "Document mandatory test practices in Definition of Done"
-               		<p> "Automate regression test, but do it sensibly"</p>
-               		<p> "Give the business feedback about progress often"</p>
-               		<p> "Use heuristics to get best results" </p>
-               		<p>"Use wisdom that is already available"</p></h2>
-               </section>
-				
-				<section>
+                <section>
                		<h1> What is quality? </h1>
                		<h3><br>crap |--------------------------| awesome</h3>
                		<h3><br>Biggest constraint: Time</h3>
+               		<h3>Opinion of business leading, so Behaviour Driven thinking</h3>
                		
                </section>
+            	
+            	<section>
+               		<h1> Make the best of it: </h1>
+               		<h2> "Document mandatory test practices in Definition of Done"
+               		<br>
+               		<br>
+               		<p> "Automate regression test, but do it sensibly"</p>
+               		</h2>
 
+               		<aside class="notes">
+						When is a User Story done?
+						User Story is gebouwd, geïntegreerd en getest
+						Build slaagt op CI server
+						Aanwezige Unit Tests slagen 100%; "Cover your tracks" met als resultaat dat coverage gelijk is gebleven of gestegen
+						Sonar rapport: >90% compliance, 20% technical debt
+						Code Review is performed
+						Performance front-end getest met YSlow, resultaat niveau A of B
+						Automatische Regressie Test is uitgebreid met relevante testcases
+						User story is getest volgens de Acceptatie Criteria.
+						Testcases zijn beschreven en opgeslagen in shared repository (bijv Google Drive)
+						User story is checked by the Designers
+						User Story is geverifieerd door Business/Product Owner.
+						All browsers are tested:
+						Chrome (latest);
+						Safari (latest);
+						Firefox (latest);
+						Internet Explorer 8 + 9 + 10 + 11;
+						Documentation is updated:
+						CMS documentation;
+						Test cases;
+						Business rules;
+						Architecture.
+						Content and Copy is agreed upon by Product Owner (possibly delegated).
+					</aside>
+
+               </section>
+
+               <section>
+               		<h2><p> "Give the business feedback about progress often"</p>
+               		<br>
+               		<p> "Use heuristics to get best results" </p>
+               		<br>
+               		<p>"Use wisdom that is already available"</p></h2>
+               	</section>
+				
+				
                <section>
                		<h1>Tested = checked + explored </h1>
                		<h2>So, automate!</h2>
                		
                </section>
 
+               <section>
+               		<h2>Begin testing in refinements and planning sessions
+               		<p>Bring out your inner BA!</p></h2>
+               		</section>
 
                <section>
-               		<h1>Automation was a big hurdle</h1>
+               		<h2>Automation was a big hurdle</h2>
                		<ul>
                			<li>needed team</li>
                			<li>turn mindset around</li>
@@ -158,79 +194,87 @@
                </section>
 
                 <section>
-               		<h1>When automation was in place...</h1>
-               		<h2>It gave me so much confidence and I could spend my time doing what I love: exploring</h2>
-               		<h2>It enabled the team to give quick feedback to the business</h2>
-               		<h2>We made a mindmap to show the business what was covered by our automated tests</h2>
-               		
+               		<h2>When automation was in place...</h2>
+               		<ul>
+               			<li>Confidence to spend time exploring</li>
+               			<li>Enabled us to give quick feedback</li>
+               			<li>We made a mindmap to show coverage of our automated tests</li>
+               		</ul>              		
                </section>
 
                <section>
-               		<h1>What else was important</h1>
+               		<h2>What else was important</h2>
                		<ul>
                		<li>Be honest about what you test and what you don't test</li>
-               		<li>Ask questions: bring out your inner BA</li>
-               </section>		
+               	</section>		
                	
                	<section>
-               		<h1>Lessons learned</h1>
+               		<h2>Lessons learned</h2>
                		<p>It is hard to get other people (who aren't testers) to understand what agile testing is about</p>
                		<p>It is even harder to change someone elses mindset</p>
 
                	</section>
 
                	<section>
-               		<h1>Lessons learned</h1>
+               		<h2>Lessons learned</h2>
                		<p>Even if you use small goals, test automation needs some time to show its true value</p>
                		<p>That makes it hard to sell to the business</p>
                			
                	</section>
 
                	 <section>
-               		<h1>Lessons learned</h1>
+               		<h2>Lessons learned</h2>
                		<p>Make the tester "Deploy Master"</p>
                	</section>
 
                	 <section>
-               		<h1>Lessons learned</h1>
+               		<h2>Lessons learned</h2>
                		<p>Prepare a response for the "why are you here-syndrome"</p>
                	</section>
 
                	<section>
-               		<h1>Moments of WIN</h1>
+               		<h2>Moments of WIN</h2>
                		<p>When the automated tests proved their worth time after time</p>	
 
                	</section>
 
                	<section>
-               		<h1>Moments of WIN</h1>
+               		<h2>Moments of WIN</h2>
                		<p>When the developers participated in testing without any encouragement</p>	
 
                	</section>
 
                	<section>
-               		<h1>Moments of WIN</h1>
+               		<h2>Moments of WIN</h2>
                		<p>When the business started trusting we could deliver at a sustainable pace</p>	
 
                	</section>
 
 
                	<section>
-               		<h1>This strategy can be improved</h1>
-               		<p>Is it too informal?</p>	
-               		<p>How do you know what you've covered? Are the acceptance criteria and the Definition of Done enough?</p>
-               		<p>Will this only work in small projects?</p>
-
+               		<h2>This strategy can be improved</h2>
+               		<ul>
+               			<li>Is it too informal?</li>
+               			<li>How do you know what you've covered? </li>
+               			<li>Are the acceptance criteria and the Definition of Done enough?</li>
+               			<li>Will this only work in small projects?</li>
                	</section>
 
                	<section>
-               		<h1>This strategy can be improved</h1>
+               		<h2>This strategy can be improved</h2>
                		<p>We didn't do all types of testing in the team: performance, PEN, total integration, load....</p>
                		
                	</section>
 
                	<section>
                		<h1>RECAP</h1>
+               		<p></p>
+               		
+               	</section>
+
+               	<section data-background="img/beer.jpg">
+               		<h1>Thanks for listening</h1>
+               		<h2>I'd love to discuss more about this at the bar</h2>
                		<p></p>
                		
                	</section>
