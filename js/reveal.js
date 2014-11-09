@@ -1032,7 +1032,7 @@ var Reveal = (function(){
 				availableHeight = dom.wrapper.offsetHeight;
 
 			// Reduce available space by margin
-			availableWidth -= ( availableHeight * config.margin );
+			availableWidth -= ( availableWidth * config.margin );
 			availableHeight -= ( availableHeight * config.margin );
 
 			// Dimensions of the content
@@ -1076,6 +1076,8 @@ var Reveal = (function(){
 			// Select all slides, vertical and horizontal
 			var slides = toArray( document.querySelectorAll( SLIDES_SELECTOR ) );
 
+            var vAlign;
+
 			for( var i = 0, len = slides.length; i < len; i++ ) {
 				var slide = slides[ i ];
 
@@ -1084,7 +1086,18 @@ var Reveal = (function(){
 					continue;
 				}
 
-				if( (config.center || slide.classList.contains( 'center' )) && !slide.classList.contains( 'nocenter' ) ) {
+                // vAlign is default center if this option is set or the slide contains class center, else top
+                vAlign = config.center || slide.classList.contains( 'center' ) ? 'center' : 'top';
+
+                // Slide can override alignment with class 'top' or 'bottom'
+                // See also 'left' and 'right'
+                if (slide.classList.contains( 'top' )) {
+                    vAlign = 'top';
+                } else if (slide.classList.contains( 'bottom' )) {
+                    vAlign = 'bottom';
+                }
+
+                if (vAlign === 'center') {
 					// Vertical stacks are not centred since their section
 					// children will be
 					if( slide.classList.contains( 'stack' ) ) {
@@ -1094,9 +1107,12 @@ var Reveal = (function(){
 						slide.style.top = Math.max( - ( getAbsoluteHeight( slide ) / 2 ) - slidePadding, -slideHeight / 2 ) + 'px';
 					}
 				}
-				else {
-					slide.style.top = '';
-				}
+				else if (vAlign === 'bottom') {
+                    slide.style.top = slideHeight / 2 - getAbsoluteHeight( slide ) + 'px';
+                }
+                else {
+                    slide.style.top = '';
+                }
 
 			}
 

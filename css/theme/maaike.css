@@ -21,7 +21,7 @@ body {
 
 .reveal {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #EFEFEF; }
@@ -40,16 +40,16 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 34px 0;
   color: #eee;
   font-family: "Source Sans Pro Semibold", sans-serif;
-  line-height: 1em;
+  line-height: 1.1em;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  text-shadow: none; }
 
 /*********************************************
  * LINKS
@@ -141,5 +141,20 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #5cb9d5; }
+
+.reveal .slides li, .reveal .slides p {
+  margin-bottom: 0.4em; }
+
+.reveal .slides .left {
+  text-align: left; }
+
+.reveal .slides .right {
+  text-align: right; }
+
+.reveal .slides .textshadow * {
+  text-shadow: -2px -2px 5px black, -2px 2px 5px black, 2px -2px 5px black, 2px 2px 5px black; }
+
+.reveal .slides {
+  letter-spacing: 0; }
 
 /*# sourceMappingURL=maaike.css.map */

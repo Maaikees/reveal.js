@@ -36,14 +36,40 @@ $linkColor: #5cb9d5;
 $linkColorHover: lighten( $linkColor, 20% );
 $headingFont: 'Source Sans Pro Semibold', sans-serif;
 $headingTextShadow: none;
-$headingLineHeight: 1.0em;
+$heading1TextShadow: none;
+$headingLineHeight: 1.1em;
+$headingMargin: 0 0 34px 0;
 //$headingLetterSpacing: -0.03em;
 $headingTextTransform: none;
 $selectionBackgroundColor: #5cb9d5;
-$mainFontSize: 30px;
+$mainFontSize: 36px;
 
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
+.reveal .slides li, .reveal .slides p {
+  margin-bottom: 0.4em;
+}
+
+.reveal .slides .left {
+  text-align: left;
+}
+
+.reveal .slides .right {
+  text-align: right;
+}
+
+.reveal .slides .textshadow * {
+  text-shadow:
+  -2px -2px 5px black,
+  -2px 2px 5px black,
+  2px -2px 5px black,
+  2px 2px 5px black;
+}
+
+
+.reveal .slides {
+  letter-spacing: 0;
+}

@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>An Agile Test Strategy - Maaike Brinkhof</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="An agile test strategy for the lonely tester">
+		<meta name="author" content="Maaike Brinkhof">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -35,15 +35,6 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
-        <!-- Style tijdelijk even hier om mee te spelen -->
-        <style>
-                .textshadow {
-                    text-shadow: 0 2px 2px #0C3D4C,
-                        2px 0 2px #0C3D4C,
-                        0 -2px 2px #0C3D4C,
-                        -2px 0 2px #0C3D4C;
-                }
-        </style>
 	</head>
 
 	<body>
@@ -52,7 +43,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="img/cuillins.jpg">
+				<section data-background="img/cuillins.jpg" class="textshadow">
 					<h1>An agile test strategy for the lonely tester</h1>
 					<h3>Keep It Simple, Stupid</h3>
 					<p>
@@ -60,7 +51,7 @@
 					</p>
 				</section>
 
-                <section data-background="img/cuillins.jpg">
+                <section data-background="img/cuillins.jpg" class="textshadow">
                    <h3>Maaike Brinkhof, SME Agile Testing @Capgemini</h3>
                    <h3>Mobile/Frontend</h3>
                    <h3>@Maaikees on Twitter</h3>
@@ -69,23 +60,23 @@
                 </section>
 
  				<section>
-                   	<h2>An organisation may be agile, but what if your team isn't?</h2>
-                	<p>What would be a succesful test strategy in that case</p>
+                   	<h3>An organisation may be agile, but what if your team isn't?</h3>
+                	<p>What would be a successful test strategy in that case</p>
                </section>
 
 				<section>
-                	<h2>Context: where did I come from?</h2>
+                	<h3>Context: where did I come from?</h3>
                 	<ul>
 						<li>Big bank</li>
 						<li>Process == sacred</li>
 						<li>Not a lot of power for the individual tester</li>
 						<li>Horror tooling</li>
-						<li>Process didn't neccesarily ensure quality software</li>
+						<li>Process didn't necessarily ensure quality software</li>
 					</ul>
                </section>
 
 				<section>
-                	<h2>Context: about the project</h2>
+                	<h3>Context: about the project</h3>
                 	<ul>
 						<li>Frontend + services layer</li>
 						<li>Build from scratch</li>
@@ -97,52 +88,46 @@
                </section>
 
                <section>
-                	<h2>More context about the organisation:
+                	<h3>More context about the organisation:</h3>
                 	<ul>
 						<li>Freedom for the individual</li>
 						<li>No testmanager(s)</li>
 						<li>Not many formal processes</li>
 						<li>Not a lot of senior colleagues</li>
 					</ul>
-                	</h2>
 
+
+
+               </section>
+
+               <section class="left">
+               	   	<h3>Given that I am a lonely tester in my team and I have to keep up with 5 developers</h3>
+                	<h3>When I don't do something smart</h3>
+                	<h3>Then I can guarantee we will not build high quality software</h3>
 
                </section>
 
                <section>
-               	   	<h2>Given that I am a lonely tester in my team and I have to keep up with 5 developers
-                	<p> When I don't do something smart</p>
-                	<p> Then I can guarantee we will not build high quality software</p>
-                	</h2>
+                	<h3>“As an agile tester I want to involve my team with testing as much as possible, so we can create software that is of high quality and satisfies the business’ needs”</h3>
 
                </section>
 
-               <section>
-                	<h2>“As an agile tester I want to involve my team with testing as much as possible, so we can create software that is of high quality and satisfies the business’ needs”</h2>
-
-               </section>
-
-                <section data-background="img/grumpy2.jpg" class="nocenter">
-                	<h2 style="text-shadow: -3px 0 black, 0 3px black;">Sounds easy right...DUH, of course you need your team</h2>
-                	<p> But the oldskool views on testing were pretty persistent...</p>
-                	<p></p>
+                <section data-background="img/grumpy2.jpg" class="top left textshadow">
+                	<h2>Sounds easy right...DUH, of course you need your team</h2>
+                	<p>But the oldskool views on testing were pretty persistent...</p>
                 </section>
 
                 <section>
-               		<h1> What is quality? </h1>
-               		<h3><br>crap |--------------------------| awesome</h3>
-               		<h3><br>Biggest constraint: Time</h3>
-               		<h3>Opinion of business leading, so Behaviour Driven thinking</h3>
-               		
-               </section>
+               		<h3>What is quality?</h3>
+               		<p>crap |--------------------------| awesome</p>
+               		<p>Biggest constraint: Time</p>
+               		<p>Opinion of business leading, so Behaviour Driven thinking</p>
+                </section>
             	
             	<section>
-               		<h1> Make the best of it: </h1>
-               		<h2> "Document mandatory test practices in Definition of Done"
-               		<br>
-               		<br>
-               		<p> "Automate regression test, but do it sensibly"</p>
-               		</h2>
+               		<h3> Make the best of it: </h3>
+               		<p>"Document mandatory test practices in Definition of Done"</p>
+               		<p>"Automate regression test, but do it sensibly"</p>
 
                		<aside class="notes">
 						When is a User Story done?
@@ -170,41 +155,39 @@
 						Content and Copy is agreed upon by Product Owner (possibly delegated).
 					</aside>
 
-               </section>
+                </section>
 
-               <section>
-               		<h2><p> "Give the business feedback about progress often"</p>
-               		<br>
-               		<p> "Use heuristics to get best results" </p>
-               		<br>
-               		<p>"Use wisdom that is already available"</p></h2>
+                <section>
+               		<h3>"Give the business feedback about progress often"</h3>
+               		<h3>"Use heuristics to get best results"</h3>
+               		<h3>"Use wisdom that is already available"</h3>
                	</section>
 				
 				
-               <section>
-               		<h1>Tested = checked + explored </h1>
-               		<h2>So, automate!</h2>
+                <section>
+               		<h3>Tested = checked + explored </h3>
+               		<h3>So, automate!</h3>
                		
-               </section>
+                </section>
+
+                <section>
+               		<h3>Begin testing in refinements and planning sessions</h3>
+               		<h3>Bring out your inner BA!</h3>
+                </section>
 
                <section>
-               		<h2>Begin testing in refinements and planning sessions
-               		<p>Bring out your inner BA!</p></h2>
-               		</section>
-
-               <section>
-               		<h2>Automation was a big hurdle</h2>
+               		<h3>Automation was a big hurdle</h3>
                		<ul>
                			<li>needed team</li>
                			<li>turn mindset around</li>
                			<li>what do you automate</li>
                			<li>easy refactoring was a must</li>
                			<li>involve business</li>
-               		
+               		</ul>
                </section>
 
                 <section>
-               		<h2>When automation was in place...</h2>
+               		<h3>When automation was in place...</h3>
                		<ul>
                			<li>Confidence to spend time exploring</li>
                			<li>Enabled us to give quick feedback</li>
@@ -213,76 +196,78 @@
                </section>
 
                <section>
-               		<h2>What else was important</h2>
+               		<h3>What else was important</h3>
                		<ul>
-               		<li>Be honest about what you test and what you don't test</li>
+               	    	<li>Be honest about what you test and what you don't test</li>
+                    </ul>
                	</section>		
                	
-               	<section>
-               		<h2>Lessons learned</h2>
+               	<section data-background-color="#470003">
+               		<h3>Lessons learned</h3>
                		<p>It is hard to get other people (who aren't testers) to understand what agile testing is about</p>
-               		<p>It is even harder to change someone elses mindset</p>
+               		<p>It is even harder to change someone else's mindset</p>
 
                	</section>
 
-               	<section>
-               		<h2>Lessons learned</h2>
+               	<section data-background-color="#470003">
+               		<h3>Lessons learned</h3>
                		<p>Even if you use small goals, test automation needs some time to show its true value</p>
                		<p>That makes it hard to sell to the business</p>
                			
                	</section>
 
-               	 <section>
-               		<h2>Lessons learned</h2>
+               	 <section data-background-color="#470003">
+               		<h3>Lessons learned</h3>
                		<p>Make the tester "Deploy Master"</p>
                	</section>
 
-               	 <section>
-               		<h2>Lessons learned</h2>
+               	 <section data-background-color="#470003">
+               		<h3>Lessons learned</h3>
                		<p>Prepare a response for the "why are you here-syndrome"</p>
                	</section>
 
-               	<section>
-               		<h2>Moments of WIN</h2>
+               	<section data-background-color="#00410e">
+               		<h3>Moments of WIN</h3>
                		<p>When the automated tests proved their worth time after time</p>	
 
                	</section>
 
-               	<section>
-               		<h2>Moments of WIN</h2>
+               	<section data-background-color="#00410e">
+               		<h3>Moments of WIN</h3>
                		<p>When the developers participated in testing without any encouragement</p>	
 
                	</section>
 
-               	<section>
-               		<h2>Moments of WIN</h2>
+               	<section data-background-color="#00410e">
+               		<h3>Moments of WIN</h3>
                		<p>When the business started trusting we could deliver at a sustainable pace</p>	
 
                	</section>
 
 
                	<section>
-               		<h2>This strategy can be improved</h2>
+               		<h3>This strategy can be improved</h3>
                		<ul>
                			<li>Is it too informal?</li>
                			<li>How do you know what you've covered? </li>
                			<li>Are the acceptance criteria and the Definition of Done enough?</li>
                			<li>Will this only work in small projects?</li>
+                    </ul>
                	</section>
 
                	<section>
-               		<h2>This strategy can be improved</h2>
+               		<h3>This strategy can be improved</h3>
                		<p>We didn't do all types of testing in the team: performance, PEN, total integration, load....</p>
                		
                	</section>
 
                	<section>
-               		<h1>RECAP</h1>
+               		<h3>RECAP</h3>
                		<p></p>
                		
                	</section>
 
-               	<section data-background="img/beer.jpg">
+               	<section data-background="img/beer.jpg" class="textshadow">
                		<h1>Thanks for listening</h1>
                		<h2>I'd love to discuss more about this at the bar</h2>
                		<p></p>
@@ -291,7 +276,7 @@
 
 
 
-
+<!--
 				<section>
 					<h2>Heads Up</h2>
 					<p>
@@ -304,7 +289,7 @@
 					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
+				&lt;!&ndash; Example of nested vertical slides &ndash;&gt;
 				<section>
 					<section>
 						<h2>Vertical Slides</h2>
@@ -559,7 +544,7 @@ function linkify( selector ) {
 
 				<section>
 					<h2>Spectacular image!</h2>
-					<!--
+					&lt;!&ndash;
 
 					Uitgezet
 
@@ -567,13 +552,13 @@ function linkify( selector ) {
 						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
 					</a>
 
-					-->
+					&ndash;&gt;
 				</section>
 
 				<section>
 					<h2>Export to PDF</h2>
 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<!--
+					&lt;!&ndash;
 
 					Uitgezet
 
@@ -582,7 +567,7 @@ function linkify( selector ) {
 						document.getElementById('slideshare').attributeName = 'allowfullscreen';
 					</script>
 
-					-->
+					&ndash;&gt;
 				</section>
 
 				<section>
@@ -605,7 +590,7 @@ function linkify( selector ) {
 				<section>
 					<h1>THE END</h1>
 					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+				</section>-->
 
 			</div>
 
