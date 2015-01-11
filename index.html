@@ -35,6 +35,21 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
+		<STYLE type="text/css">
+			/* Hack om ol en ul te wrappen om een float: right (bijv de mugshot) */
+			.reveal section ol,
+			.reveal section ul {
+				display: block;
+			}
+
+			.reveal section img.mugshot {
+				float: right;
+				width: 20%;
+				border-width: 0;
+				margin: 0.2em;
+			}
+		</STYLE>
+
 	</head>
 
 	<body>
@@ -47,7 +62,6 @@
 					<h1>The Celebrities of the Agile Testing Days</h1>
 					
 					<small>Created by <a href="http://www.maaikebrinkhof.nl">Maaike Brinkhof</a> / <a href="http://twitter.com/maaikees">@maaikees</a></small>
-					</p>
 				</section>
 
                 <section>	
@@ -62,72 +76,90 @@
                	</section>   
 
               	<section>
-                	<h3>Lisa Crispin & Janet Gregory</h3> 
+					<img src="img/Janet_and_Lisa.jpg" class="mugshot">
+					<h3>Lisa Crispin & Janet Gregory</h3>
 					<ul>
-					<li>Writers of “Agile Testing” and “More Agile Testing”</li>
-					<li>Had a talk on their latest book. Go read it!</li>
-					<li>The 'godmothers' of the conference</li>
+						<li>Writers of “Agile Testing” and “More Agile Testing”</li>
+						<li>Had a talk on their latest book. Go read it!</li>
+						<li>The 'godmothers' of the conference</li>
 					</ul>
-                	
-               	</section> 	 
-
-               <section>
-                	<h3>David Evans</h3> 
-					<ul>
-					<li>Winner “favourite speaker 2013” with the talk Visualising Quality</li>
-					<li>This year “Pillars of Testing talk”</li>
-					<li>Partner with Gojko Adzic @Neuri Consulting (Spec by Example)</li>
-					<li>Watch his talk on Visualising Quality <a href="http://vimeo.com/39750600">here</a></li>
-					</ul>
+					<small><a href="http://twitter.com/lisacrispin">@lisacrispin</a></small>
+					<small><a href="http://twitter.com/janetgregoryca">@janetgregoryca</a></small>
+               	</section>
 
 				<section>
-                	<h3>Huib Schoots</h3> 
+					<img src="img/davidevans.jpg" class="mugshot">
+                	<h3>David Evans</h3>
 					<ul>
-					<li>Context Driven & Exploratory Testing (workshop)</li>
-					<li>Loud guy, usually at FAT NL meetings</li>
-					<li>If you want to learn about these topics, go read his <a href="http://www.huibschoots.nl/wordpress/">blog</a></li>
+						<li>Winner “favourite speaker 2013” with the talk Visualising Quality</li>
+						<li>This year “Pillars of Testing talk”</li>
+						<li>Partner with Gojko Adzic @Neuri Consulting (Spec by Example)</li>
+						<li>Watch his talk on Visualising Quality <a href="http://vimeo.com/39750600">here</a></li>
 					</ul>
-                	
-               	</section> 	 
+					<small><a href="http://twitter.com/davidevans66">@davidevans66</a></small>
+				</section>
+
+				<section>
+					<img src="img/huib-shoots.png" class="mugshot">
+                	<h3>Huib Schoots</h3>
+					<ul>
+						<li>Context Driven & Exploratory Testing (workshop)</li>
+						<li>Loud guy, usually at FAT NL meetings</li>
+						<li>If you want to learn about these topics, go read his <a href="http://www.huibschoots.nl/wordpress/">blog</a></li>
+					</ul>
+					<small><a href="http://twitter.com/huibschoots">@huibschoots</a></small>
+				</section>
 
                	<section>
+					<img src="img/peter-walen.jpg" class="mugshot">
                		<h3>Peter Walen</h3>
                		<ul>
-               		<li>Liveblogging the conference for years</li>
-               		<li>Did a workshop on Exploratory Testing that was super popular</li>
-               		<li>Read his liveblog <a href="http://rhythmoftesting.blogspot.nl/2014/11/live-from-potsdam-agile-testing-days.html">here</a></li>
-               		</ul> 
+						<li>Liveblogging the conference for years</li>
+						<li>Did a workshop on Exploratory Testing that was super popular</li>
+						<li>Read his liveblog <a href="http://rhythmoftesting.blogspot.nl/2014/11/live-from-potsdam-agile-testing-days.html">here</a></li>
+               		</ul>
+					<small><a href="http://twitter.com/PeteWalen">@PeteWalen</a></small>
                	</section>
 
                	<section>
+					<img src="img/antony-marcano.jpg" class="mugshot">
                		<h3>Newcomer for me: Antony Marcano</h3>
                		<ul>
-               		<li>Keynote “Don’t put me in a box”</li>
-               		<li>Biggest eyeopener for me that year</li>
-               		<li>Read his blog <a href="http://antonymarcano.com/blog/2014/05/it-starts-with-a-story/">here</a></li>
-               		</ul> 
+						<li>Keynote “Don’t put me in a box”</li>
+						<li>Biggest eyeopener for me that year</li>
+						<li>Read his blog <a href="http://antonymarcano.com/blog/2014/05/it-starts-with-a-story/">here</a></li>
+               		</ul>
+					<small><a href="http://twitter.com/AntonyMarcano">@AntonyMarcano</a></small>
                	</section>
 
 
-               	 <section>
-               		<h3>Tom Roden & Ben Williams</h3>
-               		<ul>
-               		<li>Two young dudes with a fun personality</li>
-               		<li>How does test management change with agile development?</li>
-               		<li>Eric will tell you more about that!</li>
-               		</ul> 
-               	</section>
-               	
                	<section>
+					<img src="img/benwilliams_tomroden.jpg" class="mugshot">
+               		<h3>Ben Williams & Tom Roden</h3>
+               		<ul>
+						<li>Two young dudes with a fun personality</li>
+						<li>How does test management change with agile development?</li>
+               		</ul>
+					<small><a href="http://twitter.com/13enWilliams">@13enWilliams</a></small>
+					<small><a href="http://twitter.com/tommroden">@tommroden</a></small>
+               	</section>
+
+				<section>
+					<iframe class="stretch" data-autoplay="true" src="http://www.youtube.com/embed/iX3-uUrn1HU?enablejsapi=1"> </iframe>
+				</section>
+
+               	<section>
+					<img src="img/Alan-Richardson.jpg" class="mugshot">
                		<h3>Alan “The Evil Tester” Richardson</h3>
                		<ul>
-               		<li>The ‘nerdy’ tester, had the closing keynote</li>
-               		<li>Has a great online course on test automation with Selenium/Java</li>
-               		<li>read more <a href="http://www.eviltester.com/">here</a> </li>
-               		</ul> 
+						<li>The ‘nerdy’ tester, had the closing keynote</li>
+						<li>Has a great online course on test automation with Selenium/Java</li>
+						<li>read more <a href="http://www.eviltester.com/">here</a> </li>
+               		</ul>
+					<small><a href="http://twitter.com/eviltester">@eviltester</a></small>
                	</section>
 
-               	 <section>
+               	<section>
                		<h3>Want to know more about the conference? </h3>
                		<h3>I attempted to do this live-blogging thing as well</h3>
                		<h3>Read it <a href="http://www.maaikebrinkhof.nl/2014/11/agile-testing-days-2014-day-1/">here</a></h3>
